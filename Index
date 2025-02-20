@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My cats</title>
+    </head>
+    <body>
+        <nav class="topnav">
+                <a href="index.html">Main</a>
+                <a href="sulo.html">Sulo</a>
+                <a href="maisa.html">Maisa</a>
+                <a href="rölli.html">Rölli</a>
+                <button id="meowButton" class="btn btn-primary meow-button">Meow! 😺</button>
+                <audio id="meowSound" src="/cat-meow-297927.mp3"></audio>
+        </nav>
+        <header>
+            <h1>My cats</h1>
+            <h2>Sulo, Maisa & Rölli</h2>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="p-4">
+                    <h1>Hello there!</h1>
+                    <p>This is the homepage of three beloved cats living in Tampere, Finland. Here, you'll get to know Maisa, Sulo, and Rölli through their introductions, fun facts, and plenty of adorable pictures.
+
+                        From mischievous antics to their sweetest moments, this site is dedicated to sharing their daily lives, quirks, and unique personalities. Whether you're a fellow cat lover or just stopping by for some cuteness, we hope you enjoy your visit!
+                    </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="https://cvws-h2.icloud-content.com/B/AUECX3RqkTqov7vEHEmQsYKxtK0eAdFk4kpE14tlaEcz5oBdphgqc_Kx/IMG_1103.JPEG?o=AhG6YvBrDhx4_D79ar5Pe4KsqBsNJPAFHMhGzcQfRFYq&v=1&x=3&a=CAog-uJpgItjILviZmDa5cfu2SOVK1xUp8KttswI0n0QDakSbxDXzZ7P0TIY16r60NEyIgEAUgSxtK0eWgQqc_KxaicTF_lFMDnCGwN7DCCkSTH2ZaDvrWijlTu4ZWBo_OjB0h3WVNCwPhFyJwNsajOdHwBogWNkLcHvLl72DAfRnTvGtKGGyIWgQ_oul1NAqwHSYg&e=1739899966&fl=&r=a2af089b-da17-4cc5-90ed-266abe838b5e-1&k=XsyGzekFIojiF9qIIKIhKg&ckc=com.apple.photos.cloud&ckz=PrimarySync&y=1&p=164&s=yIiiAxEOtgeq1fjzRAEAc5fUhxQ" alt="Kuva" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h4>Craving for more content of kitties? You can find us on Instagram
+                <a href="https://www.instagram.com/emmicamilla_" target="_blank">@emmicamilla_</a>
+            </h4>
+        </div>
+    </body>
+    <script>
+    document.getElementById("meowButton").addEventListener("click", function() {
+    let meowSound = document.getElementById("meowSound");
+    meowSound.currentTime = 0;
+    meowSound.play();
+    });
+    </script>
+</html>
